@@ -1,7 +1,7 @@
 import NavbarComponent from "../components/Navbar";
 import Footer from "../components/Footer";
+import PropTypes from "prop-types";
 
-// eslint-disable-next-line react/prop-types
 function MainLayout({ children }) {
   return (
     <div className="mx-auto max-w-7xl px-6">
@@ -19,5 +19,8 @@ function MainLayout({ children }) {
     </div>
   );
 }
+MainLayout.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export default MainLayout;

@@ -5,7 +5,7 @@ const NavbarComponent = () => {
     <div className="w-full h-16 md:h-20 flex items-center justify-between px-6">
       {/* Logo a la izquierda */}
       <div className="flex-shrink-0">
-        <img src="traveLcon.png" alt="Lama Logo" className="h-12 md:h-16" />
+        <img src="traveLcon.png" alt="Lama Logo" className="h-16 md:h-16" />
       </div>
 
       {/* Enlaces de navegación */}
