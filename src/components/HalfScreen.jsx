@@ -29,26 +29,37 @@ const HalfScreen = () => {
             />
           </div>
           <div className="grid flex-shrink-0 grid-cols-1 gap-y-3 lg:gap-y-8 ">
+            {/* first image */}
             {/* sixe img */}
-
-            <div className="h-64 w-56 overflow-hidden rounded-2xl sm:opacity-0 lg:opacity-100  object-cover object-center transform hover:scale-110 transition duration-300 ease-in-out">
+            <div className="h-64 w-56 relative  sm:opacity-0 lg:opacity-100  object-cover object-center transform hover:scale-110 transition duration-300 ease-in-out">
               <motion.img
                 src="/img/tourism1.jpg"
-                className="h-[300px] w-full object-cover object-center"
+                className="h-[255px] w-full object-cover object-center rounded-2xl"
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
+              />
+              <img
+                src="/svg/user.svg"
+                alt=""
+                className="absolute top-52 right-42  w-22 h-22 "
               />
             </div>
 
             {/* Second image */}
             {/* size img */}
-            <div className="h-64 w-56 overflow-hidden rounded-2xl  object-cover object-center transform hover:scale-110 transition duration-300 ease-in-out">
+            <div className="h-64 w-56 relative object-cover object-center transform hover:scale-110 transition duration-300 ease-in-out">
               <motion.img
                 src="/img/tourism2.jpg"
                 alt=""
-                className="h-full w-full object-cover object-center "
+                className="h-full w-full object-cover object-center rounded-2xl  "
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
+              />
+
+              <img
+                src="/svg/place.svg"
+                alt=""
+                className="absolute top-52 right-42  w-22 h-22"
               />
             </div>
           </div>
@@ -59,14 +70,19 @@ const HalfScreen = () => {
               {/* Hidden img to give a separate */}
             </div>
 
-            {/* correct oone */}
-            <div className="h-72 w-48  overflow-hidden rounded-2xl  object-cover object-center transform hover:scale-110 transition duration-300 ease-in-out">
+            {/* third image */}
+            <div className="h-72 w-48 relative object-cover object-center transform hover:scale-110 transition duration-300 ease-in-out">
               <motion.img
                 src="/img/tourism3.jpg"
                 alt=""
-                className="h-full w-full object-cover object-center"
+                className="h-full w-full object-cover object-center  rounded-2xl"
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
+              />
+              <img
+                src="/svg/top.svg"
+                alt=""
+                className="absolute top-56 left-28  h-9  "
               />
             </div>
             <div className="h-64 w-44 overflow-hidden rounded-lg"></div>
