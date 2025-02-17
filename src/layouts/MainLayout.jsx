@@ -1,10 +1,10 @@
-import React from "react";
 import NavbarComponent from "../components/Navbar";
 import Footer from "../components/Footer";
 
+// eslint-disable-next-line react/prop-types
 function MainLayout({ children }) {
   return (
-    <div>
+    <div className="mx-auto max-w-7xl px-6">
       <header>
         <nav>
           <NavbarComponent />
