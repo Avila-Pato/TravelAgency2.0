@@ -1,5 +1,6 @@
 import { FaPlay } from "react-icons/fa";
 import HalfScreen from "../components/HalfScreen";
+import ScrollCarousel from "../components/InfinityScrool";
 
 const HomePage = () => {
   return (
@@ -48,8 +49,10 @@ const HomePage = () => {
           <HalfScreen />
         </div>
       </main>
-      <div>
-        <section></section>
+
+      {/* Carousel */}
+      <div className="  py-40  h-40 md:h-52 lg:h-60 mt-10 md:mt-20">
+        <ScrollCarousel />
       </div>
     </div>
   );
