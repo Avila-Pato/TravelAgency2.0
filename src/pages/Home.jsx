@@ -65,11 +65,11 @@ const HomePage = () => {
 
         <div className="grid grid-cols-1     ">
           <div className=" py-10 -my-10">
-            <h1 className="text-2xl">Services</h1>
-            <h2 className="text-6xl">
+            <h1 className="text-2xl font-extrabold text-pink-600">Services</h1>
+            <h2 className="text-6xl font-medium">
               We helping you to find your dream location
             </h2>
-            <p className="text-sm pt-5">
+            <p className="text-sm pt-5 font-normal text-gray-500">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
               voluptates molestiae amet fugit ratione, provident veritatis
               soluta optio libero consectetur, aut minus sint culpa eveniet eum
@@ -77,7 +77,7 @@ const HomePage = () => {
               fuga eaque magni ipsa, ducimus recusandae.
             </p>
           </div>
-          <div className="grid grid-cols-2 pt-10 gap-6  ">
+          <div className="grid grid-cols-2 pt-10 gap-8  ">
             <div
               className="rounded-2xl  border-b-2
               border-b-amber-950  shadow-2xl object-cover object-center transform hover:scale-110 transition duration-300 ease-in-out"
@@ -110,7 +110,7 @@ const HomePage = () => {
                 src="/img/tourism1.jpg"
                 alt=""
                 width={100}
-                className="w-full h-60 object-cover rounded-t-xl"
+                className="w-full  h-60 object-cover rounded-t-xl"
               />
               <div className="p-4">
                 <p className="text-3xl font-bold">Cancún</p>

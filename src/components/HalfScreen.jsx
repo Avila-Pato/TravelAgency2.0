@@ -1,25 +1,11 @@
 import { motion } from "framer-motion";
 
-const floatAnimation = {
-  animate: {
-    x: [0, 2, 0],
-    transition: {
-      duration: 3,
-      ease: "easeInOut",
-      repeat: Infinity,
-    },
-  },
-};
-
 const HalfScreen = () => {
   return (
     <div className="">
       {/* mano derecha */}
 
-      <motion.div
-        className="absolute transform pt-32 sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8"
-        {...floatAnimation}
-      >
+      <motion.div className="absolute transform pt-32 sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
         <div className="flex items-center space-x-6 lg:space-x-8">
           <div className="absolute pb-64 z-[-1]">
             <img
