@@ -8,11 +8,15 @@ const images = [item1, item2, item3, item4];
 
 const ScrollCarousel = () => {
   return (
-    <div className="w-full overflow-hidden relative pt-0">
+    <div className="w-full overflow-hidden relative pt-0 bg-gradient-to-r from-whhite-400 to-gray-500 z-10">
       <motion.div
         className="flex space-x-8"
         animate={{ x: ["0%", "-20%"] }}
-        transition={{ repeat: Infinity, duration: 30, ease: "linear" }}
+        transition={{
+          repeat: Infinity,
+          duration: 30,
+          ease: "linear",
+        }}
       >
         {[...images, ...images].map((item, index) => (
           <img
