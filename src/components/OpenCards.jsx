@@ -14,7 +14,7 @@ const OpenCards = () => {
 
   const cardVariants = {
     expanded: {
-      width: "400%", // CORREGIDO
+      width: "400%",
     },
     collapsed: {
       width: "200%",
@@ -89,11 +89,7 @@ const OpenCards = () => {
                   href="#"
                   className="group-hover:visible invisible cursor-text "
                 >
-                  <img
-                    src="/public/click.webp"
-                    alt="Click aquí"
-                    className="w-8 h-8"
-                  />
+                  <img src="/click.webp" alt="Click aquí" className="w-8 h-8" />
                 </a>
               </div>
             </div>

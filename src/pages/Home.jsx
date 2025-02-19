@@ -5,6 +5,7 @@ import OpenCards from "../components/OpenCards";
 import ServicesPage from "../components/Services";
 import { CgCheck } from "react-icons/cg";
 import { TbXboxX } from "react-icons/tb";
+import Slider from "../components/SliderImage";
 
 const HomePage = () => {
   return (
@@ -306,6 +307,18 @@ const HomePage = () => {
             />
           </div>
         </section>
+      </article>
+      {/* subcribe section */}
+      <article className="flex flex-col justify-center w-full min-h-[500px]">
+        <section className="flex justify-center">
+          <p className="text-4xl  font-bold text-pink-600">Testimonial</p>
+        </section>
+        <p className="flex justify-center tracking-widest text-5xl font-extrabold">
+          Trust our Clients
+        </p>
+        <div className="pt-5">
+          <Slider />
+        </div>
       </article>
     </div>
   );
