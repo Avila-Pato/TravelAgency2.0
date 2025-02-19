@@ -85,7 +85,7 @@ const HomePage = () => {
               border-b-amber-950  realtive shadow-2xl object-cover object-center transform hover:scale-110 transition duration-300 ease-in-out"
             >
               <img
-                src="/img/tourism1.jpg"
+                src="/img/services1.jpg"
                 alt=""
                 width={100}
                 className="w-full h-60 object-cover rounded-t-xl"
@@ -118,7 +118,7 @@ const HomePage = () => {
                 </div>
                 <div className="border-1 rounded-2xl py-2 px-2  relative items-center ">
                   <div className="flex justify-between  items-center ">
-                    <small className="">Agoda</small>
+                    <small className="">Incluye</small>
                     <small>
                       {" "}
                       <CgCheck className="inline-flex text-green-900" />{" "}
@@ -147,7 +147,7 @@ const HomePage = () => {
               border-b-amber-950 relative shadow-2xl object-cover object-center transform hover:scale-110 transition duration-300 ease-in-out"
             >
               <img
-                src="/img/tourism1.jpg"
+                src="/img/services.jpg"
                 alt=""
                 width={100}
                 className="w-full  h-60 object-cover rounded-t-xl"
