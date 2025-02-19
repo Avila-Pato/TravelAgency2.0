@@ -21,6 +21,8 @@ const HalfScreen = () => {
               <motion.img
                 src="/img/tourism1.jpg"
                 className="h-[255px] w-full object-cover object-center rounded-2xl"
+                loading="lazy" 
+                style={{ backgroundColor: "#eee", minHeight: 200 }} 
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
               />
@@ -38,6 +40,8 @@ const HalfScreen = () => {
                 src="/img/tourism2.jpg"
                 alt=""
                 className="h-full w-full object-cover object-center rounded-2xl  "
+                loading="lazy" 
+                style={{ backgroundColor: "#eee", minHeight: 200 }} 
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
               />
@@ -62,6 +66,8 @@ const HalfScreen = () => {
                 src="/img/tourism3.jpg"
                 alt=""
                 className="h-full w-full object-cover object-center  rounded-2xl"
+                loading="lazy" 
+                style={{ backgroundColor: "#eee", minHeight: 200 }} 
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
               />

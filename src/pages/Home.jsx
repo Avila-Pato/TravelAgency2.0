@@ -90,6 +90,8 @@ const HomePage = () => {
               <img
                 src="/img/services1.jpg"
                 alt=""
+                loading="lazy" 
+                style={{ backgroundColor: "#eee", minHeight: 200 }} 
                 width={100}
                 className="w-full h-60 object-cover rounded-t-xl transform duration-300 hover:brightness-125"
               />
@@ -153,6 +155,8 @@ const HomePage = () => {
                 src="/img/services.jpg"
                 alt=""
                 width={100}
+                loading="lazy" 
+                style={{ backgroundColor: "#eee", minHeight: 200 }} 
                 className="w-full  h-60 object-cover rounded-t-xl transform duration-300 hover:brightness-125"
               />
 
