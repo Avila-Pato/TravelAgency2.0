@@ -218,9 +218,11 @@ const HomePage = () => {
           <OpenCards />
         </div>
       </div>
-      <article className="flex flex-col md:flex-row justify-between">
+      <article className="flex flex-col md:flex-row justify-between pl-28 ">
         <section className="md:w-1/2">
-          <h3 className="text-4xl text-start font-extrabold  ">Services</h3>
+          <h3 className="text-4xl text-start font-extrabold text-pink-600  ">
+            Services
+          </h3>
           <h1 className="text-4xl font-extrabold text-start ">
             We helping you to find your dream location
           </h1>
