@@ -6,6 +6,8 @@ import ServicesPage from "../components/Services";
 import { CgCheck } from "react-icons/cg";
 import { TbXboxX } from "react-icons/tb";
 import Slider from "../components/SliderImage";
+import { SlEnvolopeLetter } from "react-icons/sl";
+
 
 const HomePage = () => {
   return (
@@ -208,7 +210,6 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-          {/* <div className="bg-yellow-500 w-full  ">Footer</div> */}
         </div>
       </div>
 
@@ -309,7 +310,7 @@ const HomePage = () => {
         </section>
       </article>
       {/* subcribe section */}
-      <article className="flex flex-col justify-center w-full min-h-[500px]">
+      <article className="flex flex-col justify-center w-full min-h-[800px]">
         <section className="flex justify-center">
           <p className="text-4xl  font-bold text-pink-600">Testimonial</p>
         </section>
@@ -320,6 +321,26 @@ const HomePage = () => {
           <Slider />
         </div>
       </article>
+      <section className="flex flex-col items-center justify-center w-fullpy-12">
+        <p className="text-4xl  font-bold text-pink-600">
+          Subscribe to our newsletter
+        </p>
+        <p className="text-2xl tracking-wide text-gray-500">
+          Prepare yourself & let’s explore the beauty of the world
+        </p>
+        <div className="pt-7 relative">
+          <input
+            placeholder="Your email"
+            type="text"
+            className=" bg-amber-200 rounded-l-2xl py-2 px-10 border-1  "
+          />
+          <SlEnvolopeLetter  className="absolute top-[37px] left-3  text-gray-600 text-xl"/>
+          <button className="inline-flex bg-purple-600 rounded-r-2xl py-2 px-3  cursor-pointer border-1">
+            Subscribe
+          </button>
+        </div>
+      </section>
+  
     </div>
   );
 };
