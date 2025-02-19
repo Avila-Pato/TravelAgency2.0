@@ -54,32 +54,47 @@ const OpenCards = () => {
         {cardImages.map((image, index) => (
           <motion.div
             key={index}
-            className={`card cursor-pointer h-[500px] bg-hover rounded-[20px] ${
+            className={`card cursor-pointer h-[500px] bg-hover rounded-[20px] group ${
               index === expandedIndex ? "expanded" : ""
             }`}
             variants={cardVariants}
             initial="collapsed"
             animate={expandedIndex === index ? "expanded" : "collapsed"}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.3 }}
             onClick={() => handleCardClick(index)}
             style={{
               backgroundImage: `url(${image})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
-              lazy: true,
             }}
           >
             <div className="card-content h-full flex flex-col justify-end  bg-opacity-50">
               <div className="card-footer  rounded-b-[20px]  bg-opacity-75 min-h-[130px] flex flex-col items-center justify-center bg-transparent">
-                <h2 className="text-xl font-semibold text-white text-center">
+                <h2 className="text-xl font-semibold text-white text-center ">
                   {cardTitles[index]}
                 </h2>
                 {expandedIndex === index && (
-                  <p className="mt-2 text-gray-200 text-center">
+                  <motion.p
+                    className="mt-2 text-gray-200 text-center"
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    transition={{ duration: 0.3, ease: "easeInOut" }}
+                  >
                     {cardDescriptions[index]}
-                  </p>
+                  </motion.p>
                 )}
+                <a
+                  href="#"
+                  className="group-hover:visible invisible cursor-text "
+                >
+                  <img
+                    src="/public/click.webp"
+                    alt="Click aquí"
+                    className="w-8 h-8"
+                  />
+                </a>
               </div>
             </div>
           </motion.div>

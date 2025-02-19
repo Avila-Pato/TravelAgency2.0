@@ -61,7 +61,7 @@ const HomePage = () => {
 
       <div className="flex flex-col md:flex-row justify-between">
         {/* Services */}
-        <div className="w-full flex flex-col mt-10">
+        <div className="w-full flex flex-col">
           <ServicesPage />
         </div>
 
@@ -82,13 +82,13 @@ const HomePage = () => {
           <div className="grid grid-cols-2 pt-10 gap-8  ">
             <div
               className="rounded-2xl  border-b-2
-              border-b-amber-950  realtive shadow-2xl object-cover object-center transform hover:scale-110 transition duration-300 ease-in-out"
+              border-b-amber-950  realtive shadow-2xl "
             >
               <img
                 src="/img/services1.jpg"
                 alt=""
                 width={100}
-                className="w-full h-60 object-cover rounded-t-xl"
+                className="w-full h-60 object-cover rounded-t-xl transform duration-300 hover:brightness-125"
               />
               <div className="absolute ">
                 <p
@@ -136,7 +136,7 @@ const HomePage = () => {
                   </div>
                 </div>
                 <div className="flex justify-center mt-1  py-1">
-                  <button className="bg-blue-500 rounded-2xl w-full font-bold text-white py-2 cursor-pointer">
+                  <button className="bg-blue-500 rounded-2xl w-full font-bold text-white py-2 cursor-pointer object-cover object-center transform hover:scale-110 transition duration-300 ease-in-out">
                     Consultar oferta
                   </button>
                 </div>
@@ -144,14 +144,15 @@ const HomePage = () => {
             </div>
             <div
               className="rounded-2xl  border-b-2
-              border-b-amber-950 relative shadow-2xl object-cover object-center transform hover:scale-110 transition duration-300 ease-in-out"
+              border-b-amber-950 relative shadow-2xl "
             >
               <img
                 src="/img/services.jpg"
                 alt=""
                 width={100}
-                className="w-full  h-60 object-cover rounded-t-xl"
+                className="w-full  h-60 object-cover rounded-t-xl transform duration-300 hover:brightness-125"
               />
+
               <div className="absolute ">
                 <p
                   className="relative bottom-6 left-16 
@@ -199,7 +200,7 @@ const HomePage = () => {
                   </div>
                 </div>
                 <div className="flex justify-center mt-1  py-1">
-                  <button className="bg-blue-500 rounded-2xl w-full font-bold text-white py-2 cursor-pointer">
+                  <button className="bg-blue-500 rounded-2xl w-full font-bold text-white py-2 cursor-pointer object-cover object-center transform hover:scale-110 transition duration-300 ease-in-out">
                     Consultar oferta
                   </button>
                 </div>
@@ -217,6 +218,93 @@ const HomePage = () => {
           <OpenCards />
         </div>
       </div>
+      <article className="flex flex-col md:flex-row justify-between">
+        <section className="md:w-1/2">
+          <h3 className="text-4xl text-start font-extrabold  ">Services</h3>
+          <h1 className="text-4xl font-extrabold text-start ">
+            We helping you to find your dream location
+          </h1>
+          <p className="text-sm pt-5 font-normal text-gray-500">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+            voluptates molestiae amet fugit ratione, provident veritatis soluta
+            optio libero consectetur, aut minus sint culpa eveniet eum
+            accusantium eaque atque officia numquam tempora. Provident vel fuga
+            eaque magni ipsa, ducimus recusandae.
+          </p>
+          <div className=" pr-10 relative ">
+            <div className="grid grid-cols-[150px_400px] pt-10  ">
+              <div className="pt-6   ">
+                <img
+                  src="/svg/Frame51.svg"
+                  alt=""
+                  width={30}
+                  className=" w-12 h-12 ml-12  "
+                />
+              </div>
+              <span className=" text-xl font-extrabold tracking-wider">
+                We Offer best services
+                <p className=" text-gray-400 font-medium  tracking-normal ">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorem, debitis enim ipsa culpa necessitatibus nisi.
+                  Voluptate temporibus sapiente omnis id!
+                </p>
+              </span>
+            </div>
+            <div className="grid  grid-cols-[150px_400px] pt-10 ">
+              <div className="pt-6">
+                <img
+                  src="/svg/Frame71.svg"
+                  alt=""
+                  width={30}
+                  className=" w-12 h-12 ml-12 "
+                />
+              </div>
+              <span className="  text-xl font-extrabold tracking-wider">
+                We Offer best services
+                <p className=" text-gray-400 font-medium   tracking-normal">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorem, debitis enim ipsa culpa necessitatibus nisi.
+                  Voluptate temporibus sapiente omnis id!
+                </p>
+              </span>
+            </div>
+            <div className="grid  grid-cols-[150px_400px] pt-10 ">
+              <div className="pt-6">
+                <img
+                  src="/svg/Vector.svg"
+                  alt=""
+                  width={30}
+                  className=" w-12 h-12 ml-12 "
+                />
+              </div>
+              <span className="  text-xl font-extrabold tracking-wider">
+                We Offer best services
+                <p className=" text-gray-400 font-medium tracking-normal">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorem, debitis enim ipsa culpa necessitatibus nisi.
+                  Voluptate temporibus sapiente omnis id!
+                </p>
+              </span>
+            </div>
+          </div>
+        </section>
+        <section className="flex gap-1 w-full  ml-11 pt-24">
+          <div className="flex flex-col justify-center items-center relative pb-56">
+            <img
+              src="/img/Cor1.jpg"
+              alt=""
+              className="rounded-full w-[315px] h-[492px] object-cover object-center transform hover:scale-110 transition duration-300 ease-in-out hover:brightness-125 "
+            />
+          </div>
+          <div className="flex flex-col justify-center items-center pt-56">
+            <img
+              src="/img/Cor2.jpg"
+              alt=""
+              className="rounded-full w-[315px] h-[492px]  border-amber-100 border-8 absolute right-24 object-cover object-center transform hover:scale-110 transition duration-300 ease-in-out hover:brightness-125 "
+            />
+          </div>
+        </section>
+      </article>
     </div>
   );
 };
