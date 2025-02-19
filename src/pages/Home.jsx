@@ -3,6 +3,8 @@ import HalfScreen from "../components/HalfScreen";
 import ScrollCarousel from "../components/InfinityScrool";
 import OpenCards from "../components/OpenCards";
 import ServicesPage from "../components/Services";
+import { CgCheck } from "react-icons/cg";
+import { TbXboxX } from "react-icons/tb";
 
 const HomePage = () => {
   return (
@@ -80,7 +82,7 @@ const HomePage = () => {
           <div className="grid grid-cols-2 pt-10 gap-8  ">
             <div
               className="rounded-2xl  border-b-2
-              border-b-amber-950  shadow-2xl object-cover object-center transform hover:scale-110 transition duration-300 ease-in-out"
+              border-b-amber-950  realtive shadow-2xl object-cover object-center transform hover:scale-110 transition duration-300 ease-in-out"
             >
               <img
                 src="/img/tourism1.jpg"
@@ -88,23 +90,61 @@ const HomePage = () => {
                 width={100}
                 className="w-full h-60 object-cover rounded-t-xl"
               />
+              <div className="absolute ">
+                <p
+                  className="relative bottom-6 left-16 
+                rounded-2xl p-2  "
+                >
+                  <small className="bg-red-700 rounded-l-sm border-2 py-1 px-1 border-red-500 text-white ">
+                    29%
+                  </small>
+                  <small className="bg-white rounded-r-sm border-2 py-1 px-1 border-red-500 text-red-500">
+                    menos de lo habitual
+                  </small>
+                </p>
+              </div>
+
               <div className="p-4">
-                <p className="text-3xl font-bold">Punta Cana</p>
-                <p className="text-lg text-gray-600">Paquete 6 noches</p>
-                <p className="text-lg font-semibold text-green-700">
-                  Todo incluido
+                <p className="text-3xl font-semibold truncate  ">
+                  Samba Angra dos Reis
                 </p>
-                <p className="mt-2">
-                  Desde <br />
-                  <strong className="text-2xl text-red-600">$5.000</strong>
-                  <br />
-                  <small className="text-gray-500">Precio por persona</small>
-                </p>
+                <div className="flex justify-between items-center">
+                  <p className="text-lg text-gray-600 flex-col truncate">
+                    7.3 - razonable
+                  </p>
+                  <p className="text-lg font-semibold text-green-700 truncate">
+                    Rio de janeiro, Brasil
+                  </p>
+                </div>
+                <div className="border-1 rounded-2xl py-2 px-2  relative items-center ">
+                  <div className="flex justify-between  items-center ">
+                    <small className="">Agoda</small>
+                    <small>
+                      {" "}
+                      <CgCheck className="inline-flex text-green-900" />{" "}
+                      Desayuno incluido
+                    </small>
+                  </div>
+
+                  <div className="justify-between items-center">
+                    <small className="text-gray-500  ">Aproximadamente</small>
+                    <small className="font-normal flex">$39.483</small>
+                    <div className="flex justify-between items-center">
+                      <small className="font-thin ">Por noche</small>
+                      <small className="">27 mar - 30 mar </small>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex justify-center mt-1  py-1">
+                  <button className="bg-blue-500 rounded-2xl w-full font-bold text-white py-2 cursor-pointer">
+                    Consultar oferta
+                  </button>
+                </div>
               </div>
             </div>
             <div
               className="rounded-2xl  border-b-2
-              border-b-amber-950  shadow-2xl object-cover object-center transform hover:scale-110 transition duration-300 ease-in-out"
+              border-b-amber-950 relative shadow-2xl object-cover object-center transform hover:scale-110 transition duration-300 ease-in-out"
             >
               <img
                 src="/img/tourism1.jpg"
@@ -112,41 +152,59 @@ const HomePage = () => {
                 width={100}
                 className="w-full  h-60 object-cover rounded-t-xl"
               />
+              <div className="absolute ">
+                <p
+                  className="relative bottom-6 left-16 
+                rounded-2xl p-2  "
+                >
+                  <small className="bg-red-700 rounded-l-sm border-2 py-1 px-1 border-red-500 text-white ">
+                    19%
+                  </small>
+                  <small className="bg-white rounded-r-sm border-2 py-1 px-1 border-red-500 text-red-500">
+                    menos de lo habitual
+                  </small>
+                </p>
+              </div>
+
               <div className="p-4">
-                <p className="text-3xl font-bold">Cancún</p>
-                <p className="text-lg text-gray-600">Paquete 6 noches</p>
-                <p className="text-lg font-semibold text-green-700">
-                  Todo incluido
-                </p>
-                <p className="mt-2">
-                  Desde <br />
-                  <strong className="text-2xl text-red-600">$5.000</strong>
-                  <br />
-                  <small className="text-gray-500">Precio por persona</small>
-                </p>
+                <p className="text-3xl font-bold">Torres del paine </p>
+                <div className="flex justify-between items-center">
+                  <p className="text-lg text-gray-600  truncate">
+                    {" "}
+                    9.3 - Bueno{" "}
+                  </p>
+                  <p className="text-lg font-semibold truncate text-green-900">
+                    {" "}
+                    Región de Magallanes{" "}
+                  </p>
+                </div>
+                <div className="border-1 rounded-2xl py-2 px-2  relative items-center ">
+                  <div className="flex justify-between  items-center ">
+                    <small className="">Incluye</small>
+                    <small>
+                      {" "}
+                      <TbXboxX className="inline-flex text-red-900" /> Desayuno
+                      incluido
+                    </small>
+                  </div>
+                  <div className=" justify-between ">
+                    <small className=" flex text-gray-600">
+                      Aproximadamente
+                    </small>
+                    <small className="text-gray-600 flex ">$750.000</small>
+                    <div className="flex justify-between items-center">
+                      <small className="font-thin">Por noche</small>
+                      <small>27 mar - 30 mar </small>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex justify-center mt-1  py-1">
+                  <button className="bg-blue-500 rounded-2xl w-full font-bold text-white py-2 cursor-pointer">
+                    Consultar oferta
+                  </button>
+                </div>
               </div>
             </div>
-
-            {/* <div className="bg-orange-500">
-                Playa del carmen
-                <p>Paquete 6 noches</p>
-                <strong>Todo incluido</strong>
-                <p>
-                  Desde <br />
-                  $5.000 <br />
-                  <small>Precio por persona</small>
-                </p>
-              </div>
-              <div className="bg-purple-700">
-                Bayahibe
-                <p>Paquete 6 noches</p>
-                <strong>Todo incluido</strong>
-                <p>
-                  Desde <br />
-                  $5.000 <br />
-                  <small>Precio por persona</small>
-                </p>
-              </div> */}
           </div>
           {/* <div className="bg-yellow-500 w-full  ">Footer</div> */}
         </div>
