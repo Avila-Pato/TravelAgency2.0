@@ -39,7 +39,7 @@ const HomePage = () => {
           </p>
 
           {/* Botones */}
-          <div className="mt-10 flex flex-col md:flex-row md:space-x-4 justify-start w-full">
+          <div className="mt-5 md:mt-10 lg:mt-20 flex flex-col md:flex-row md:space-x-4 justify-start w-full">
             <button className="w-[107px] h-[40px] rounded-3xl cursor-pointer text-white bg-gradient-to-t from-pink-400 to-purple-400">
               Get Started
             </button>
@@ -52,7 +52,7 @@ const HomePage = () => {
         </div>
 
         {/* Contenido a la derecha */}
-        <div className=" w-full md:w-1/2 mt-5 md:mt-0  ">
+        <div className=" w-full   ">
           <HalfScreen />
         </div>
       </main>
@@ -71,10 +71,10 @@ const HomePage = () => {
         <div className="grid grid-cols-1     ">
           <div className=" py-10 -my-10">
             <h1 className="text-2xl font-extrabold text-pink-600">Services</h1>
-            <h2 className="text-6xl font-medium">
+            <h2 className="text-6xl sm:text-4xl md:text-5xl lg:text-6xl font-medium">
               We helping you to find your dream location
             </h2>
-            <p className="text-sm pt-5 font-normal text-gray-500">
+            <p className="text-sm pt-5  font-normal text-gray-500">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
               voluptates molestiae amet fugit ratione, provident veritatis
               soluta optio libero consectetur, aut minus sint culpa eveniet eum
@@ -82,7 +82,7 @@ const HomePage = () => {
               fuga eaque magni ipsa, ducimus recusandae.
             </p>
           </div>
-          <div className="grid grid-cols-2 pt-10 gap-8  ">
+          <div className="grid grid-cols-1 sm:grid-cols-2 pt-10 gap-8  ">
             <div
               className="rounded-2xl  border-b-2
               border-b-amber-950  realtive shadow-2xl "

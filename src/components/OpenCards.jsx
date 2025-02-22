@@ -13,12 +13,8 @@ const OpenCards = () => {
   };
 
   const cardVariants = {
-    expanded: {
-      width: "400%",
-    },
-    collapsed: {
-      width: "200%",
-    },
+    expanded: { width: "300px", flexGrow: 2 },
+    collapsed: { width: "150px", flexGrow: 1 },
   };
 
   const cardImages = [city1, city2, city3, city4];
@@ -31,52 +27,51 @@ const OpenCards = () => {
   ];
 
   const cardDescriptions = [
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sint a beatae illo sequi dolore adipisci error fuga facilis corrupti quasi, similique quod sapiente? Natus dolorum assumenda perferendis odio. Architecto.",
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sint a beatae illo sequi dolore adipisci error fuga facilis corrupti quasi, similique quod sapiente? Natus dolorum assumenda perferendis odio. Architecto.",
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sint a beatae illo sequi dolore adipisci error fuga facilis corrupti quasi, similique quod sapiente? Natus dolorum assumenda perferendis odio. Architecto.",
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sint a beatae illo sequi dolore adipisci error fuga facilis corrupti quasi, similique quod sapiente? Natus dolorum assumenda perferendis odio. Architecto.",
+    "Una playa paradisíaca con aguas cristalinas y arena blanca.",
+    "Uno de los destinos más visitados con fiestas y vistas increíbles.",
+    "Un paraíso natural con acantilados y playas impresionantes.",
+    "Colinas icónicas con una vista espectacular en Bohol.",
   ];
 
   return (
-    <section className=" pb-[80px] pt-[80px]">
+    <section className="pb-[80px] pt-[80px]">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         <h1 className="text-4xl md:text-5xl lg:text-6xl text-center font-extrabold leading-tight mt-2 text-pink-600">
           Top Destinations
         </h1>
-        <p className="text-lg mt-5 px-4 md:px-0 text-start text-gray-500">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis
-          sint a beatae illo sequi dolore adipisci error fuga facilis corrupti
-          quasi, similique quod sapiente? Natus dolorum assumenda perferendis
-          odio. Architecto.
+        <p className="text-lg mt-5 px-4 md:px-0 text-center text-gray-500">
+          Descubre los mejores destinos turísticos con paisajes espectaculares.
         </p>
       </div>
-      <div className="mt-12 flex flex-col md:flex-row justify-center items-center gap-5">
+      <div className="mt-12 flex flex-col md:flex-row justify-center items-center gap-3 sm:gap-5">
         {cardImages.map((image, index) => (
+
           <motion.div
-            key={index}
-            className={`card cursor-pointer h-[500px] bg-hover rounded-[20px] group ${
-              index === expandedIndex ? "expanded" : ""
-            }`}
-            variants={cardVariants}
-            initial="collapsed"
-            animate={expandedIndex === index ? "expanded" : "collapsed"}
-            transition={{ duration: 0.3 }}
-            onClick={() => handleCardClick(index)}
-            style={{
-              backgroundImage: `url(${image})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-            }}
-          >
-            <div className="card-content h-full flex flex-col justify-end  bg-opacity-50">
-              <div className="card-footer  rounded-b-[20px]  bg-opacity-75 min-h-[130px] flex flex-col items-center justify-center bg-transparent">
-                <h2 className="text-xl font-semibold text-white text-center ">
+          key={index}
+          className={`card cursor-pointer h-[300px]    bg-hover rounded-[20px] group ${
+            index === expandedIndex ? "expanded" : ""
+          } w-full sm:w-[600px] md:w-[400px]`}
+          variants={cardVariants}
+          initial="collapsed"
+          animate={expandedIndex === index ? "expanded" : "collapsed"}
+          transition={{ duration: 0.3 }}
+          onClick={() => handleCardClick(index)}
+          style={{
+            backgroundImage: `url(${image})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+        
+            <div className="card-content h-full flex flex-col justify-end bg-opacity-50">
+              <div className="card-footer rounded-b-[20px] bg-opacity-75 min-h-[130px] flex flex-col items-center justify-center bg-transparent p-4">
+                <h2 className="text-lg sm:text-xl font-semibold text-white text-center">
                   {cardTitles[index]}
                 </h2>
                 {expandedIndex === index && (
                   <motion.p
-                    className="mt-2 text-gray-200 text-center"
+                    className="text-sm sm:text-base text-gray-200 text-center mt-2"
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
@@ -85,11 +80,8 @@ const OpenCards = () => {
                     {cardDescriptions[index]}
                   </motion.p>
                 )}
-                <a
-                  href="#"
-                  className="group-hover:visible invisible cursor-text "
-                >
-                  <img src="/click.webp" alt="Click aquí" className="w-8 h-8" />
+                <a href="#" className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <img src="/click.webp" alt="Click aquí" className="w-16 sm:w-16 md:w-24" />
                 </a>
               </div>
             </div>

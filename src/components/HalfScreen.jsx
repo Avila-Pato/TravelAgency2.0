@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 
 const HalfScreen = () => {
   return (
-    <div className="">
+    <>
       {/* mano derecha */}
-
+      <main className=" items-center sm:items-start sm:flex-row sm:justify-center">
       <motion.div className="absolute transform pt-32 sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
         <div className="flex items-center space-x-6 lg:space-x-8">
           <div className="absolute pb-64 z-[-1]">
@@ -14,7 +14,7 @@ const HalfScreen = () => {
               className="w-[600px] h-auto scale-200 "
             />
           </div>
-          <div className="grid flex-shrink-0 grid-cols-1 gap-y-3 lg:gap-y-8 ">
+          <div className="grid flex-shrink-0 grid-cols-1 md:grid-cols-1  gap-y-3 lg:gap-y-8 ">
             {/* first image */}
             {/* sixe img */}
             <div className="h-64 w-56 relative  sm:opacity-0 lg:opacity-100  object-cover object-center transform hover:scale-110 transition duration-300 ease-in-out">
@@ -56,7 +56,7 @@ const HalfScreen = () => {
 
           <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
             {/* size img  but this is a hidden img */}
-            <div className="h-64 w-44 overflow-hidden rounded-lg">
+            <div className="h-64 w-44 ">
               {/* Hidden img to give a separate */}
             </div>
 
@@ -77,11 +77,12 @@ const HalfScreen = () => {
                 className="absolute top-56 left-28  h-9  "
               />
             </div>
-            <div className="h-64 w-44 overflow-hidden rounded-lg"></div>
+            <div className="h-64 w-44"></div>
           </div>
         </div>
       </motion.div>
-    </div>
+      </main>
+    </>
   );
 };
 

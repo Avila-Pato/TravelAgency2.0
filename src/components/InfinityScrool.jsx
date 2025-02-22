@@ -8,10 +8,10 @@ const images = [item1, item2, item3, item4];
 
 const ScrollCarousel = () => {
   return (
-    <div className="w-full overflow-hidden relative pt-0 bg-gradient-to-r from-whhite-400 to-gray-500 z-10">
+    <div className="w-full overflow-hidden pt-0 bg-gradient-to-r from-white to-gray-500 z-10">
       <motion.div
-        className="flex space-x-8"
-        animate={{ x: ["0%", "-20%"] }}
+        className="flex space-x-4 sm:space-x-8"
+        animate={{ x: ["0%", "-40%"] }} 
         transition={{
           repeat: Infinity,
           duration: 30,
@@ -21,7 +21,7 @@ const ScrollCarousel = () => {
         {[...images, ...images].map((item, index) => (
           <img
             key={index}
-            className="w-40"
+            className="w-24 sm:w-32 md:w-40 lg:w-48" // adaptando a diferentes pantallas
             src={item}
             alt={`carousel-item-${index}`}
           />
