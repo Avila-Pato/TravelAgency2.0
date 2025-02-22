@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 function MainLayout({ children }) {
   return (
-    <div className="mx-auto max-w-7xl px-6">
+    <div className="mx-auto max-w-screen ">
       <header>
         <nav>
           <NavbarComponent />
