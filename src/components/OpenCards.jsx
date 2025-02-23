@@ -43,7 +43,7 @@ const OpenCards = () => {
           Descubre los mejores destinos turísticos con paisajes espectaculares.
         </p>
       </div>
-      <div className="mt-12  flex flex-wrap md:px-72
+      <div className="mt-12  flex flex-wrap md:px-72 px-9
       place-items-center  md:grid-row  items-center gap-3 sm:gap-5 ">
         {cardImages.map((image, index) => (
 
@@ -82,7 +82,7 @@ const OpenCards = () => {
                   </motion.p>
                 )}
                 <a href="#" className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <img src="/click.webp" alt="Click aquí" className="w-16 sm:w-16 md:w-24" />
+                  <img src="/click.webp" alt="Click aquí" className="w-4 sm:w-8 md:w-16" />
                 </a>
               </div>
             </div>
