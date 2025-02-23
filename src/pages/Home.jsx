@@ -16,7 +16,7 @@ const HomePage = () => {
           <div className="w-full flex justify-start">
             <div
               className="h-10 flex items-center p-2 text-pink-600 font-semibold  rounded-3xl bg-amber-100 hover:bg-purple-200 
-            shadow-lg"
+            shadow-lg text-xs md:text-2xl "
             >
               Explore The world
             </div>
