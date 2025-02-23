@@ -43,7 +43,8 @@ const OpenCards = () => {
           Descubre los mejores destinos turísticos con paisajes espectaculares.
         </p>
       </div>
-      <div className="mt-12  flex flex-wrap md:px-72 px-9
+      <div className="mt-12  flex flex-wrap md:px-5 
+       px-9
       place-items-center  md:grid-row  items-center gap-3 sm:gap-5 ">
         {cardImages.map((image, index) => (
 

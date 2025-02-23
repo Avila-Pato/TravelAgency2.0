@@ -53,7 +53,7 @@ export default function Slider() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -100 }}
               transition={{ duration: 0.5 }}
-              className="object-cover w-[200px]  "
+              className="object-cover w-[100px] sm:w-[200px] lg:w-[300px]  "
             />
             <motion.p
               key={`name-${index}`}

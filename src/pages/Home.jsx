@@ -12,7 +12,7 @@ const HomePage = () => {
     <div className="min-h-screen flex flex-col pt-4  ">
       <main className="flex flex-grow flex-col items-center md:flex-row justify-between text-center md:pt-1">
         {/* Contenido a la izquierda */}
-        <div className="flex flex-col md:items-center lg:max-w-lg md:pl-2 pl-2 pt-2 sm:place-self-auto md:mx-auto   ">
+        <div className="flex flex-col md:items-center lg:max-w-lg md:pl-2 pl-2 lg:pl-10 pt-2 sm:place-self-auto  md:mx-auto   ">
           <div className="w-full flex justify-start">
             <div
               className="h-10 flex items-center  p-2 md:p-3 text-pink-600 font-semibold  rounded-3xl bg-amber-100 hover:bg-purple-200 
@@ -22,7 +22,7 @@ const HomePage = () => {
             </div>
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl text-start font-extrabold leading-tight mt-2">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl text-start font-extrabold lg:px-4 leading-tight mt-2">
             Travel{" "}
             <strong className="text-transparent bg-gradient-to-t from-purple-600 to-pink-600 bg-clip-text">
               {" "}
@@ -30,7 +30,7 @@ const HomePage = () => {
             </strong>{" "}
             of the world
           </h1>
-          <p className="text-lg mt-5 lg:px-4 md:px-0 text-start">
+          <p className="text-lg mt-5 lg:px-4 md:px-0 text-start lg:text-start md:text-center md:text-2xl">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolor
             animi quae quas nemo laborum incidunt maxime recusandae assumenda
             provident!
@@ -38,7 +38,7 @@ const HomePage = () => {
 
           {/* Botones */}
         
-        <div className="mt-5 md:mt-10 lg:mt-20 gap-2 flex flex-row xs:flex-row md:flex-row xs:space-x-4 md:space-x-4 justify-start w-full">
+        <div className="mt-5 md:mt-10 lg:mt-20 gap-2 flex flex-row xs:flex-row md:flex-row xs:space-x-4 md:space-x-4 justify-start w-full  md:place-content-center lg:place-content-start">
             <button className="w-[107px] h-[40px]  rounded-3xl cursor-pointer text-white bg-gradient-to-t from-pink-400 to-purple-400">
               Get Started
             </button>
@@ -227,15 +227,21 @@ const HomePage = () => {
       </div>
 
       {/* tercera seccion servicios  */}
-      <section className="flex flex-col  md:flex-row justify-between md:pl-28 p-5 ">
-        <section className="md:w-1/2 ">
-          <h3 className="text-4xl text-start font-extrabold text-pink-600  ">
+      <section className="flex flex-col  md:flex-row justify-between md:pl-5 sm:pl-5 lg:px-10 pl-2">
+
+        <section className="w-full sm:flex sm:flex-col sm:w-full md:flex md:flex-col  md:w-full  ">
+
+
+          <h3 className="text-4xl 
+          lg:text-center
+          font-extrabold text-pink-600 md:text-center 
+          sm:text-center  ">
             Services
           </h3>
-          <h1 className="text-4xl font-extrabold text-start ">
+          <h1 className="text-4xl lg:text-center xl:text-start font-extrabold text-start ">
             We helping you to find your dream location
           </h1>
-          <p className="text-sm pt-5 font-normal text-gray-500">
+          <p className="text-sm pt-5  font-normal text-gray-500">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
             voluptates molestiae amet fugit ratione, provident veritatis soluta
             optio libero consectetur, aut minus sint culpa eveniet eum
@@ -244,7 +250,10 @@ const HomePage = () => {
           </p>
           
           <div className=" md:pr-10 relative  ">
-            <div className="grid place-items-center md:grid-cols-[150px_400px] pt-10  ">
+            <div className="grid place-items-center 
+            sm:grid-cols-[150px_400px] 
+            md:grid-cols-[220px_400px] 
+            lg:grid-cols-[100px_400px] pt-10  ">
               <div className="pt-6">
                 <img
                   src="/svg/Frame51.svg"
@@ -262,7 +271,10 @@ const HomePage = () => {
                 </p>
               </span>
             </div>
-            <div className="grid md:grid-cols-[150px_400px]  place-items-center">
+            <div className="grid 
+            sm:grid-cols-[150px_400px] 
+            md:grid-cols-[220px_400px]
+              lg:grid-cols-[100px_400px] place-items-center">
               <div className="pt-6">
                 <img
                   src="/svg/Frame71.svg"
@@ -280,7 +292,10 @@ const HomePage = () => {
                 </p>
               </span>
             </div>
-            <div className="grid place-items-center md:grid-cols-[150px_400px] pt-10 ">
+            <div className="grid place-items-center 
+            sm:grid-cols-[150px_400px] 
+            md:grid-cols-[220px_400px] 
+            lg:grid-cols-[100px_400px] pt-10 ">
               <div className="pt-6">
                 <img
                   src="/svg/Vector.svg"
@@ -301,7 +316,7 @@ const HomePage = () => {
           </div>
         </section>
         {/* Imagenes que estan juntas */}
-        <section className="md:grid ml-16 grid-cols-2 hidden lg:block  w-full md:mr-11 md:ml-11 pt-24  relative ">
+        <section className=" ml-16 grid-cols-2 xl:block  md:hidden  sm:hidden  lg:hidden  hidden  w-full md:mr-11 md:ml-11 pt-24  relative ">
           <div className="flex flex-col  justify-center items-center relative  pb-56 md:pb-1">
 
             <img
