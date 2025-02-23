@@ -9,14 +9,14 @@ import Slider from "../components/SliderImage";
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen flex flex-col pb-28  ">
-      <main className="flex flex-grow flex-col items-center md:flex-row justify-between text-center p-5">
+    <div className="min-h-screen flex flex-col pt-4  ">
+      <main className="flex flex-grow flex-col items-center md:flex-row justify-between text-center md:pt-1">
         {/* Contenido a la izquierda */}
-        <div className="flex flex-col md:items-center max-w-lg md:pl-28 sm:place-self-auto mx-auto  ">
+        <div className="flex flex-col md:items-center lg:max-w-lg md:pl-2 pl-2 pt-2 sm:place-self-auto md:mx-auto   ">
           <div className="w-full flex justify-start">
             <div
-              className="h-10 flex items-center p-2 text-pink-600 font-semibold  rounded-3xl bg-amber-100 hover:bg-purple-200 
-            shadow-lg text-xs md:text-2xl "
+              className="h-10 flex items-center  p-2 md:p-3 text-pink-600 font-semibold  rounded-3xl bg-amber-100 hover:bg-purple-200 
+            shadow-lg text-xs md:text-lg "
             >
               Explore The world
             </div>
@@ -30,7 +30,7 @@ const HomePage = () => {
             </strong>{" "}
             of the world
           </h1>
-          <p className="text-lg mt-5 px-4 md:px-0 text-start">
+          <p className="text-lg mt-5 lg:px-4 md:px-0 text-start">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolor
             animi quae quas nemo laborum incidunt maxime recusandae assumenda
             provident!
@@ -58,7 +58,7 @@ const HomePage = () => {
       </main>
 
       {/* Carousel */}
-      <div className="  py-20  h-40 md:h-52 lg:h-60 mt-10 md:mt-20">
+      <div className="  py-20  h-40 md:h-52 lg:h-60 mt-3 md:mt-2">
         <ScrollCarousel />
       </div>
 
