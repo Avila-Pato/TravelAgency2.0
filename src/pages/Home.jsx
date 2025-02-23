@@ -71,7 +71,7 @@ const HomePage = () => {
         <div className="grid grid-cols-1 p-5">
           <div className=" py-10 -my-10">
             <h1 className="text-2xl font-extrabold text-pink-600">Services</h1>
-            <h2 className="text-5xl sm:text-4xl md:text-5xl lg:text-6xl font-bold ">
+            <h2 className="text-5xl sm:text-4xl md:text-5xl lg:text-6xl font-bold  ">
               We helping you to find your dream location
             </h2>
             <p className="text-sm pt-5  font-normal text-gray-500">
@@ -82,10 +82,29 @@ const HomePage = () => {
               fuga eaque magni ipsa, ducimus recusandae.
             </p>
           </div>
-          <div className="grid grid-cols-1  sm:grid-cols-2 sm:my-2 pt-10 gap-8 place-items-center  ">
+          {/* Seccion de catalogos */}
+          <div className="grid grid-cols-1 
+          sm:grid-cols-2 
+          sm:my-8 
+          sm:pt-0
+          sm:w-4/5
+          sm:ml-12
+
+          md:w-5/6
+          lg:w-full
+          
+          gap-8 pt-10
+            ">
             <div
-              className="rounded-2xl  border-b-2
-              border-b-amber-950  w-80 md:w-full  shadow-2xl "
+              className="rounded-2xl   border-b-2
+              border-b-amber-950 
+               w-80 
+              sm:w-[260px]
+              md:w-[300px]
+                shadow-2xl 
+                
+                
+                "
             >
               <img
                 src="/img/services1.jpg"
@@ -93,7 +112,7 @@ const HomePage = () => {
                 loading="lazy"
                 style={{ backgroundColor: "#eee", minHeight: 200 }}
                 width={100}
-                className="w-full h-60 object-cover rounded-t-xl transform duration-300 hover:brightness-125 "
+                className="w-full h-60 sm:h-[100px] object-cover rounded-t-xl transform duration-300 hover:brightness-125  "
               />
               <div className="absolute  ">
                 <p
@@ -150,7 +169,16 @@ const HomePage = () => {
             {/* Segundo catalogo */}
             <div
               className="rounded-2xl  border-b-2
-              border-b-amber-950 w-80  relative shadow-2xl "
+              border-b-amber-950  
+              relative shadow-2xl  
+                  w-80 
+              sm:w-[260px]
+              md:w-[280px]
+             
+
+
+              
+                   "
             >
               <img
                 src="/img/services.jpg"
@@ -158,15 +186,15 @@ const HomePage = () => {
                 width={100}
                 loading="lazy"
                 style={{ backgroundColor: "#eee", minHeight: 200 }}
-                className="w-full h-60 object-cover rounded-t-xl transform duration-300 hover:brightness-125"
+                className="w-full h-60 object-cover rounded-t-xl transform duration-300 hover:brightness-125 sm:h-[100px]  "
               />
 
-              <div className="absolute ">
+              <div className="absolute  ">
                 <p
                   className="relative bottom-6 left-16 
-                rounded-2xl p-2  "
+                rounded-2xl p-2   "
                 >
-                  <small className="bg-red-700 rounded-l-sm border-2 py-1 px-1 border-red-500 text-white ">
+                  <small className="bg-red-700 rounded-l-sm border-2 py-1 px-1 border-red-500 text-white  ">
                     19%
                   </small>
                   <small className="bg-white rounded-r-sm border-2 py-1 px-1 border-red-500 text-red-500">
@@ -176,7 +204,7 @@ const HomePage = () => {
               </div>
 
               <div className="p-4">
-                <p className="text-3xl font-bold">Torres del paine </p>
+                <p className="text-3xl font-bold truncate">Torres del paine </p>
                 <div className="flex justify-between items-center">
                   <p className="text-lg text-gray-600  truncate">
                     {" "}
@@ -253,7 +281,7 @@ const HomePage = () => {
             <div className="grid place-items-center 
             sm:grid-cols-[150px_400px] 
             md:grid-cols-[220px_400px] 
-            lg:grid-cols-[100px_400px] pt-10  ">
+            lg:grid-cols-[200px_400px] pt-10  ">
               <div className="pt-6">
                 <img
                   src="/svg/Frame51.svg"
@@ -274,7 +302,7 @@ const HomePage = () => {
             <div className="grid 
             sm:grid-cols-[150px_400px] 
             md:grid-cols-[220px_400px]
-              lg:grid-cols-[100px_400px] place-items-center">
+              lg:grid-cols-[200px_400px] place-items-center">
               <div className="pt-6">
                 <img
                   src="/svg/Frame71.svg"
@@ -295,7 +323,7 @@ const HomePage = () => {
             <div className="grid place-items-center 
             sm:grid-cols-[150px_400px] 
             md:grid-cols-[220px_400px] 
-            lg:grid-cols-[100px_400px] pt-10 ">
+            lg:grid-cols-[200px_400px] pt-10 ">
               <div className="pt-6">
                 <img
                   src="/svg/Vector.svg"
