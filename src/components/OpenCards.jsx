@@ -34,23 +34,24 @@ const OpenCards = () => {
   ];
 
   return (
-    <section className="pb-[80px] pt-[80px]">
+    <section className=" pb-[80px] pt-[80px] ">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl text-center font-extrabold leading-tight mt-2 text-pink-600">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl text-center font-extrabold leading-tight mt-2 text-pink-600 ">
           Top Destinations
         </h1>
         <p className="text-lg mt-5 px-4 md:px-0 text-center text-gray-500">
           Descubre los mejores destinos turísticos con paisajes espectaculares.
         </p>
       </div>
-      <div className="mt-12 flex flex-col md:flex-row justify-center items-center gap-3 sm:gap-5">
+      <div className="mt-12  flex flex-wrap md:px-72
+      place-items-center  md:grid-row  items-center gap-3 sm:gap-5 ">
         {cardImages.map((image, index) => (
 
           <motion.div
           key={index}
-          className={`card cursor-pointer h-[300px]    bg-hover rounded-[20px] group ${
+          className={`card cursor-pointer h-[300px] min-w-[200px] bg-hover rounded-[20px] group  ${
             index === expandedIndex ? "expanded" : ""
-          } w-full sm:w-[600px] md:w-[400px]`}
+          } w-full sm:w-[600px] md:w-[400px] `}
           variants={cardVariants}
           initial="collapsed"
           animate={expandedIndex === index ? "expanded" : "collapsed"}
@@ -64,7 +65,7 @@ const OpenCards = () => {
           }}
         >
         
-            <div className="card-content h-full flex flex-col justify-end bg-opacity-50">
+            <div className="card-content  h-full flex flex-col justify-end bg-opacity-50">
               <div className="card-footer rounded-b-[20px] bg-opacity-75 min-h-[130px] flex flex-col items-center justify-center bg-transparent p-4">
                 <h2 className="text-lg sm:text-xl font-semibold text-white text-center">
                   {cardTitles[index]}
