@@ -15,7 +15,7 @@ const HomePage = () => {
         <div className="flex flex-col md:items-center lg:max-w-lg md:pl-2 pl-2 lg:pl-10 pt-2 sm:place-self-auto  md:mx-auto   ">
           <div className="w-full flex justify-start">
             <div
-              className="h-10 flex items-center  p-2 md:p-3 text-pink-600 font-semibold  rounded-3xl bg-amber-100 hover:bg-purple-200 
+              className="h-10 flex items-center   md:p-3 text-pink-600 font-semibold  rounded-3xl bg-amber-100 hover:bg-purple-200 
             shadow-lg text-xs md:text-lg "
             >
               Explore The world
@@ -68,13 +68,13 @@ const HomePage = () => {
           <ServicesPage />
         </div>
 
-        <div className="grid grid-cols-1 p-5">
+        <div className="grid grid-cols-1 ">
           <div className=" py-10 -my-10">
-            <h1 className="text-2xl font-extrabold text-pink-600">Services</h1>
-            <h2 className="text-5xl sm:text-4xl md:text-5xl lg:text-6xl font-bold  ">
+            <h1 className="text-2xl pl-1 font-extrabold text-pink-600">Services</h1>
+            <h2 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold  ">
               We helping you to find your dream location
             </h2>
-            <p className="text-sm pt-5  font-normal text-gray-500">
+            <p className="text-sm pt-5  font-normal text-gray-500 px-2" >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
               voluptates molestiae amet fugit ratione, provident veritatis
               soluta optio libero consectetur, aut minus sint culpa eveniet eum
@@ -83,7 +83,10 @@ const HomePage = () => {
             </p>
           </div>
           {/* Seccion de catalogos */}
-          <div className="grid grid-cols-1 
+          <div className="
+          place-items-center
+          grid
+          grid-cols-1  
           sm:grid-cols-2 
           sm:my-8 
           sm:pt-0
@@ -260,16 +263,16 @@ const HomePage = () => {
         <section className="w-full sm:flex sm:flex-col sm:w-full md:flex md:flex-col  md:w-full  ">
 
 
-          <h3 className="text-4xl 
+          <h3 className="text-2xl 
           lg:text-center
-          font-extrabold text-pink-600 md:text-center 
-          sm:text-center  ">
+           text-pink-600 md:text-center 
+          sm:text-center pl-1 font-extrabold  ">
             Services
           </h3>
-          <h1 className="text-4xl lg:text-center xl:text-start font-extrabold text-start ">
+          <h1 className="text-3xl lg:text-center xl:text-start font-extrabold text-start ">
             We helping you to find your dream location
           </h1>
-          <p className="text-sm pt-5  font-normal text-gray-500">
+          <p className="text-sm pt-5 px-1  font-normal text-gray-500">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
             voluptates molestiae amet fugit ratione, provident veritatis soluta
             optio libero consectetur, aut minus sint culpa eveniet eum

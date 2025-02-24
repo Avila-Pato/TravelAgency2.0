@@ -44,7 +44,7 @@ const OpenCards = () => {
         </p>
       </div>
       <div className="mt-12  flex flex-wrap md:px-5 
-       px-9
+       px-14 
       place-items-center  md:grid-row  items-center gap-3 sm:gap-5 ">
         {cardImages.map((image, index) => (
 
