@@ -9,10 +9,10 @@ import Slider from "../components/SliderImage";
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen flex flex-col pt-4  ">
-      <main className="flex flex-grow flex-col items-center md:flex-row justify-between text-center md:pt-1">
+    <div className="min-h-screen  flex flex-col pt-4  ">
+      <main className="flex flex-grow flex-col items-center md:flex-row justify-between text-center md:pt-1 ">
         {/* Contenido a la izquierda */}
-        <div className="flex flex-col md:items-center lg:max-w-lg md:pl-2 pl-2 lg:pl-10 pt-2 sm:place-self-auto  md:mx-auto   ">
+        <div className="flex flex-col md:items-center lg:max-w-lg md:pl-2 pl-2 lg:pl-10 pt-2 sm:place-self-auto  md:mx-auto  lg:pb-12 ">
           <div className="w-full flex justify-start">
             <div
               className="h-10 flex items-center   md:p-3 text-pink-600 font-semibold  rounded-3xl bg-amber-100 hover:bg-purple-200 
@@ -94,7 +94,7 @@ const HomePage = () => {
           sm:ml-12
 
           md:w-5/6
-          lg:w-full
+          lg:place-items-center
           
           gap-8 pt-10
             ">
@@ -104,6 +104,10 @@ const HomePage = () => {
                w-80 
               sm:w-[260px]
               md:w-[300px]
+              lg:w-[300px]
+
+              
+
                 shadow-2xl 
                 
                 
@@ -177,10 +181,8 @@ const HomePage = () => {
                   w-80 
               sm:w-[260px]
               md:w-[280px]
-             
+              lg:w-[300px]
 
-
-              
                    "
             >
               <img
@@ -260,19 +262,19 @@ const HomePage = () => {
       {/* tercera seccion servicios  */}
       <section className="flex flex-col  md:flex-row justify-between md:pl-5 sm:pl-5 lg:px-10 pl-2">
 
-        <section className="w-full sm:flex sm:flex-col sm:w-full md:flex md:flex-col  md:w-full  ">
+        <section className="w-full sm:flex sm:flex-col sm:w-full md:flex md:flex-col  md:w-full lg:place-items-center ">
 
 
           <h3 className="text-2xl 
-          lg:text-center
+          lg:text-center 
            text-pink-600 md:text-center 
           sm:text-center pl-1 font-extrabold  ">
             Services
           </h3>
-          <h1 className="text-3xl lg:text-center xl:text-start font-extrabold text-start ">
+          <h1 className="text-3xl  lg:text-center xl:text-start font-extrabold text-start ">
             We helping you to find your dream location
           </h1>
-          <p className="text-sm pt-5 px-1  font-normal text-gray-500">
+          <p className="text-sm pt-5 px-1  font-normal  text-gray-500">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
             voluptates molestiae amet fugit ratione, provident veritatis soluta
             optio libero consectetur, aut minus sint culpa eveniet eum
@@ -280,22 +282,29 @@ const HomePage = () => {
             eaque magni ipsa, ducimus recusandae.
           </p>
           
-          <div className=" md:pr-10 relative  ">
+          <div className=" md:mr-16 relative 
+            lg:place-content-center
+            lg:text-center
+            lg:mr-36
+            text-center
+            ">
             <div className="grid place-items-center 
+            lg:place-content-center
             sm:grid-cols-[150px_400px] 
             md:grid-cols-[220px_400px] 
-            lg:grid-cols-[200px_400px] pt-10  ">
+            lg:grid-cols-[200px_400px] pt-10 
+            ">
               <div className="pt-6">
                 <img
                   src="/svg/Frame51.svg"
                   alt=""
                   width={30}
-                  className=" w-12 h-12 md:ml-12  "
+                  className="  w-12 h-12 md:ml-12  "
                 />
               </div>
-              <span className=" flex flex-col text-xl md:gap-2 font-extrabold tracking-wider place-items-center">
+              <span className="  flex flex-col text-xl md:gap-2 font-extrabold tracking-wider ">
                 We Offer best services
-                <p className=" text-gray-400 font-medium tracking-normal  text-center  ">
+                <p className=" text-gray-400 font-medium tracking-normal  text-center    ">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Dolorem, debitis enim ipsa culpa necessitatibus nisi.
                   Voluptate temporibus sapiente omnis id!
@@ -306,7 +315,7 @@ const HomePage = () => {
             sm:grid-cols-[150px_400px] 
             md:grid-cols-[220px_400px]
               lg:grid-cols-[200px_400px] place-items-center">
-              <div className="pt-6">
+              <div className="pt-6 ">
                 <img
                   src="/svg/Frame71.svg"
                   alt=""
@@ -314,7 +323,7 @@ const HomePage = () => {
                   className=" w-12 h-12  md:ml-12 "
                 />
               </div>
-              <span className=" flex flex-col text-xl md:gap-2  font-extrabold tracking-wider place-items-center">
+              <span className=" flex flex-col text-xl md:gap-2  font-extrabold tracking-wider ">
                 We Offer best services
                 <p className=" text-gray-400 font-medium  text-center  tracking-normal">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -335,9 +344,9 @@ const HomePage = () => {
                   className=" w-12 h-12 md:ml-12 "
                 />
               </div>
-              <span className=" flex flex-col text-center md:gap-2   text-xl font-extrabold tracking-wider">
+              <span className="flex flex-col text-xl md:gap-2  font-extrabold tracking-wider">
                 We Offer best services
-                <p className=" text-gray-400 font-medium tracking-normal">
+                <p className=" text-gray-400 font-medium  text-center  tracking-normal">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Dolorem, debitis enim ipsa culpa necessitatibus nisi.
                   Voluptate temporibus sapiente omnis id!
